@@ -7,6 +7,8 @@ interface PeopleHandler {
     //sayHiFunction:
     sayHi: sayHiFunction;
     getPerson:(a: number) => Person;  // alaias for type
+    sayHiToMyPerson: (a: number) => string;
+    getPeopleOfAge (a: number) => People; // alaias for type
 }
 
 class MyPeople implements PeopleHandler {
