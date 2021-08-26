@@ -8,10 +8,12 @@ var order = {
 };
 function renderView(order) {
     document.getElementById("confirmation").innerHTML =
-        "Customer name " +
+        "Customer" +
             order.customer.firstName +
             " " +
-            order.customer.lastName;
+            order.customer.lastName +
+            " " +
+            order.customer.address;
     var ordersTable = document.getElementById("ordersTable");
     var tableBody = ordersTable.getElementsByTagName("tbody")[0];
     tableBody.innerHTML = "";

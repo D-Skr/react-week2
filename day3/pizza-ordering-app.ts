@@ -9,10 +9,12 @@ var order = {
 
 function renderView(order) {
   document.getElementById("confirmation").innerHTML =
-    "Customer name " +
+    "Customer" +
     order.customer.firstName +
     " " +
-    order.customer.lastName;
+    order.customer.lastName +
+    " " +
+    order.customer.address;
 
   const ordersTable = document.getElementById("ordersTable");
   const tableBody = ordersTable.getElementsByTagName("tbody")[0];
